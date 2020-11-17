@@ -64,3 +64,8 @@ map(producto,[j[1],j[2],j[4],j[3]],[j[2],j[3],j[1],j[4]]);
 map(producto,[j[1],j[2],j[4],j[3]],[j[2],j[3],j[1],j[4]]);
 /*COMPROBAMOS QUE SEA ORTOGONAL*/
 
+punto 3 parte d
+load ("eigen")$
+p:makelist(sen(3*t)*(1-t^2),t,0,10)$;
+o:makelist(sen(3*t)*(1-t^2),t+1,0,10)$;
+lagrange(p,o);
